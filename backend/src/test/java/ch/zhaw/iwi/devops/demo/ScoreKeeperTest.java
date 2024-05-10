@@ -63,15 +63,15 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB3();
         Assertions.assertEquals("005:004", scoreKeeper.getScore());
     }
-    /* 
+  
     @Test
     public void testSequentialScores() {
         scoreKeeper.scoreTeamA1();
         scoreKeeper.scoreTeamA1();
         scoreKeeper.scoreTeamA1();
-        Assertions.assertEquals("003:000", scoreKeeper.getScore());
+        Assertions.assertEquals("003:000x", scoreKeeper.getScore());
     }
-
+  /* 
     @Test
     public void testComplexScoreCombination() {
         scoreKeeper.scoreTeamA3();
