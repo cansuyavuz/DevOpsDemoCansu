@@ -27,7 +27,7 @@ public class ScoreKeeperTest {
     @Test
     public void testScoreTeamA1() {
         scoreKeeper.scoreTeamA1();
-        Assertions.assertEquals("001xxx:000", scoreKeeper.getScore());
+        Assertions.assertEquals("001:000", scoreKeeper.getScore());
     }
  /*
     @Test

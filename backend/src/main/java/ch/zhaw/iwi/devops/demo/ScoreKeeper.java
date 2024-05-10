@@ -11,11 +11,11 @@ public class ScoreKeeper {
     public void scoreTeamA2() {
         scoreTeamA += 2;
     }
-   /*
+
     public void scoreTeamA1() {
         scoreTeamA += 1;
     }
-
+   /*
     public void scoreTeamB3() {
         scoreTeamB += 3;
     }
