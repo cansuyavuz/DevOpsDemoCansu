@@ -1,0 +1,3 @@
+[submodule "Desktop/DevOpsDemoCansu/DevOpsDemoCansu"]
+	path = Desktop/DevOpsDemoCansu/DevOpsDemoCansu
+	url = https://github.com/cansuyavuz/DevOpsDemoCansu.git
