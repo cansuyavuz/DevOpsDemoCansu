@@ -35,12 +35,13 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamB3();
         Assertions.assertEquals("000:003", scoreKeeper.getScore());
     }
-/*
+
     @Test
     public void testScoreTeamB2() {
         scoreKeeper.scoreTeamB2();
-        Assertions.assertEquals("000:002", scoreKeeper.getScore());
+        Assertions.assertEquals("000xx:002", scoreKeeper.getScore());
     }
+    /*
     //letzter commit war falsch benannt, sollte "testScoreTeamB1()test" heissen 
 @Test
 public void testScoreTeamB1() {
