@@ -17,20 +17,20 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamA3();
         Assertions.assertEquals("003:000", scoreKeeper.getScore());
     }
-    
+
     @Test
     public void testScoreTeamA2() {
         scoreKeeper.scoreTeamA2();
         Assertions.assertEquals("002:000", scoreKeeper.getScore());
     }
 
-/* 
+
     @Test
     public void testScoreTeamA1() {
         scoreKeeper.scoreTeamA1();
         Assertions.assertEquals("001:000", scoreKeeper.getScore());
     }
-
+/* 
     @Test
     public void testScoreTeamB3() {
         scoreKeeper.scoreTeamB3();
