@@ -21,20 +21,36 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelpdeskController {
 
-    private Map<Integer, Helpdesk> help = new HashMap<>();
+    private Map<Integer, Helpdesk> helpdesk = new HashMap<Integer, Helpdesk>();
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
-        this.help.put( 1, new help(1, "Computerproblem", "Bluescreen beim Hochfahren"));
-        this.help.put( 2, new Helpdesk(2, "Netzwerkproblem", "Langsame Internetverbindung"));
-        this.help.put( 3, new Helpdesk(3, "Druckerproblem", "Drucker druckt nicht"));
+        this.helpdesk.put( 1, new Helpdesk(1, "Computerproblem", "Bluescreen beim Hochfahren"));
+        this.helpdesk.put( 2, new Helpdesk(2, "Netzwerkproblem", "Langsame Internetverbindung"));
+        this.helpdesk.put( 3, new Helpdesk(3, "Druckerproblem", "Drucker druckt nicht"));
         System.out.println("Init Data");
+    }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Helpdesk app is up and running!";
+    }
+
+    @GetMapping("/services/ping")
+    public String ping() {
+        String languageCode = "de";
+        return "{ \"status\": \"ok\", \"userId\": \"admin"+ "\", \"languageCode\": \"" + languageCode + "\",\"version\": \"0.0.1" + "\"}";
+    }
+
+    @GetMapping("/count")
+    public int count() {
+        return this.helpdesk.size();
     }
 
     @GetMapping("/services/helpdesk")
     public List<PathListEntry<Integer>> getHelpdesks() {
         var result = new ArrayList<PathListEntry<Integer>>();
-        for (var helpdesk : this.helpdesks.values()) {
+        for (var helpdesk : this.helpdesk.values()) {
             var entry = new PathListEntry<Integer>();
             entry.setKey(helpdesk.getId(), "helpdeskKey");
             entry.setName(helpdesk.getTitle());
@@ -45,26 +61,27 @@ public class HelpdeskController {
         return result;
     }
 
+
     @GetMapping("/services/helpdesk/{id}")
     public Helpdesk getHelpdesk(@PathVariable Integer id) {
-        return this.helpdesks.get(id);
+        return this.helpdesk.get(id);
     }
 
     @PostMapping("/services/helpdesk")
     public void createHelpdesk(@RequestBody Helpdesk helpdesk) {
-        var newId = this.helpdesks.keySet().stream().max(Comparator.naturalOrder()).orElse(0) + 1;
+        var newId = this.helpdesk.keySet().stream().max(Comparator.naturalOrder()).orElse(0) + 1;
         helpdesk.setId(newId);
-        this.helpdesks.put(newId, helpdesk);
+        this.helpdesk.put(newId, helpdesk);
     }
 
     @PutMapping("/services/helpdesk/{id}")
     public void updateHelpdesk(@PathVariable Integer id, @RequestBody Helpdesk helpdesk) {
         helpdesk.setId(id);
-        this.helpdesks.put(id, helpdesk);
+        this.helpdesk.put(id, helpdesk);
     }
 
     @DeleteMapping("/services/helpdesk/{id}")
     public Helpdesk deleteHelpdesk(@PathVariable Integer id) {
-        return this.helpdesks.remove(id);
+        return this.helpdesk.remove(id);
     }
 }

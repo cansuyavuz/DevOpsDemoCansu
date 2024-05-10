@@ -94,7 +94,7 @@ export class GuiModel {
                     "url": "/helpdesk",
                     "formFieldList": [
                         {
-                            "id":   "problem",
+                            "id":  "problem",
                             "type": "text",
                             "name": { default: "Problem" },
                             "required": true,
@@ -152,10 +152,10 @@ export class GuiModel {
                             "page": "helpdeskPage",
                             "width": 2,
                             "newRow": true,
-                        },
+                        }
                     ]
                 },
-               
+
                 {
                     "id": "toDoPage",
                     "elementList": [
@@ -212,11 +212,11 @@ export class GuiModel {
                                 "form": "HelpdeskForm"
                             }
                         }
-                    ],
-                },
+                    ]
+                }
             ]
         }
-    };
+    }
     get guiModel() {
         return this._guiModel;
     }
