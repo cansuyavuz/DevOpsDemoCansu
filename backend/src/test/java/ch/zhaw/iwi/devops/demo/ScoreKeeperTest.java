@@ -17,12 +17,12 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamA3();
         Assertions.assertEquals("003:000", scoreKeeper.getScore());
     }
-/* 
+ 
     @Test
     public void testInitialScore() {
         Assertions.assertEquals("000:000", scoreKeeper.getScore());
     }
-
+/* 
     @Test
     public void testScoreTeamA2() {
         scoreKeeper.scoreTeamA2();
