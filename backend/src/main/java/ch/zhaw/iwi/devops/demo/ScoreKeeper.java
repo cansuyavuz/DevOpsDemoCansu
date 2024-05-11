@@ -28,9 +28,9 @@ public class ScoreKeeper {
     public void scoreTeamB1() {
         scoreTeamB += 1;
     }
-/* 
+
     public String getScore() {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
-    }*/
-    
+    }
+
 }
