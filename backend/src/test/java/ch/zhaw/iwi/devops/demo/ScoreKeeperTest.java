@@ -81,7 +81,7 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB3();
         scoreKeeper.scoreTeamA1();
         scoreKeeper.scoreTeamB1();
-        Assertions.assertEquals("006:006xx", scoreKeeper.getScore());
+        Assertions.assertEquals("006:006", scoreKeeper.getScore());
     }
     /*  
 
