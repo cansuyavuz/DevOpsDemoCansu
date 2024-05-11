@@ -15,7 +15,7 @@ public class ScoreKeeperTest {
     public void testScoreTeamA3() {
         scoreKeeper.scoreTeamA3();
         Assertions.assertEquals("003:000xx", scoreKeeper.getScore());
-    }/* 
+    }
 
     @Test
     public void testScoreTeamA2() {
@@ -88,6 +88,6 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB3();
         scoreKeeper = new ScoreKeeper();  // Resetting by reinitializing
         Assertions.assertEquals("000:000", scoreKeeper.getScore());
-    } */
+    } 
 
 }
