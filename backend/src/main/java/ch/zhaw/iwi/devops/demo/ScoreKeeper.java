@@ -10,6 +10,10 @@ public class ScoreKeeper {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
     
+    public void scoreTeamA3() {
+        scoreTeamA += 3;
+    }
+
     /* 
     public void scoreTeamA2() {
         scoreTeamA += 2;
