@@ -52,16 +52,16 @@ public void testScoreTeamB1() {
     public void testInitialScore() {
         Assertions.assertEquals("000:000", scoreKeeper.getScore());
     }
-/* 
+
     @Test
     public void testMultipleScores() {
         scoreKeeper.scoreTeamA3();
         scoreKeeper.scoreTeamA2();
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB3();
-        Assertions.assertEquals("005:004", scoreKeeper.getScore());
+        Assertions.assertEquals("005:004xx", scoreKeeper.getScore());
     }
-  
+  /* 
     @Test
     public void testSequentialScores() {
         scoreKeeper.scoreTeamA1();
