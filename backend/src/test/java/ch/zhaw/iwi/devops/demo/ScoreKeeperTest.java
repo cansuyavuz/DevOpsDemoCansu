@@ -62,7 +62,7 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamA2();
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB3();
-        Assertions.assertEquals("005:004xx", scoreKeeper.getScore());
+        Assertions.assertEquals("005:004", scoreKeeper.getScore());
     }
     /*  
 
