@@ -50,7 +50,7 @@ public void testScoreTeamB1() {
 
    @Test
     public void testInitialScore() {
-        Assertions.assertEquals("000:000xx", scoreKeeper.getScore());
+        Assertions.assertEquals("000:000", scoreKeeper.getScore());
     }
 /* 
     @Test
