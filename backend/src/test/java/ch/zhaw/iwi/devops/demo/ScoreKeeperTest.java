@@ -11,6 +11,7 @@ public class ScoreKeeperTest {
     public void setUp() {
         scoreKeeper = new ScoreKeeper();
     }
+    //TESTFALL 1: 
     @Test
     public void testInitialScore() {
         Assertions.assertEquals("000:ss000", scoreKeeper.getScore());

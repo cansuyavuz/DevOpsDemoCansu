@@ -4,12 +4,13 @@ public class ScoreKeeper {
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
 
-    /* 
+
     //TESTFALL 1: 
     public String getScore() {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
     
+    /* 
     /* 
     public void scoreTeamA3() {
         scoreTeamA += 3;
