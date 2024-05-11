@@ -91,7 +91,7 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB3();
         scoreKeeper = new ScoreKeeper();  // Resetting by reinitializing
-        Assertions.assertEquals("000:000xx", scoreKeeper.getScore());
+        Assertions.assertEquals("000:000", scoreKeeper.getScore());
     } 
     
 }
