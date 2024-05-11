@@ -55,7 +55,7 @@ public void testScoreTeamB1() {
     Assertions.assertEquals("000:001", scoreKeeper.getScore());
 }
 
-//TESTFALL 8:
+    //TESTFALL 8:
 @Test
     public void testMultipleScores() {
         scoreKeeper.scoreTeamA3();
@@ -64,17 +64,19 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB3();
         Assertions.assertEquals("005:004", scoreKeeper.getScore());
     }
-    /*  
-
-    
- 
+    //TESTFALL 9: 
     @Test
     public void testSequentialScores() {
         scoreKeeper.scoreTeamA1();
         scoreKeeper.scoreTeamA1();
         scoreKeeper.scoreTeamA1();
-        Assertions.assertEquals("003:000", scoreKeeper.getScore());
+        Assertions.assertEquals("003:000xx", scoreKeeper.getScore());
     }
+    /*  
+
+    
+ 
+
    
     @Test
     public void testComplexScoreCombination() {
