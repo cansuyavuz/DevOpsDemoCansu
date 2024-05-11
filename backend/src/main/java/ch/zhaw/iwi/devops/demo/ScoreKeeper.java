@@ -9,11 +9,12 @@ public class ScoreKeeper {
     public String getScore() {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
-    
+    //TESTFALL 2:
     public void scoreTeamA3() {
         scoreTeamA += 3;
     }
 
+    //TESTFALL 3
     /* 
     public void scoreTeamA2() {
         scoreTeamA += 2;
