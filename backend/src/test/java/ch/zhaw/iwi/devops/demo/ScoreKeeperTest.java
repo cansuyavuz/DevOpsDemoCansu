@@ -83,14 +83,7 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB1();
         Assertions.assertEquals("006:006", scoreKeeper.getScore());
     }
-    /*  
-
-    
- 
-
-   
- 
- 
+    //TESTFALL 11:
     @Test
     public void testResetScore() {
         scoreKeeper.scoreTeamA2();
@@ -98,7 +91,7 @@ public void testScoreTeamB1() {
         scoreKeeper.scoreTeamB1();
         scoreKeeper.scoreTeamB3();
         scoreKeeper = new ScoreKeeper();  // Resetting by reinitializing
-        Assertions.assertEquals("000:000", scoreKeeper.getScore());
+        Assertions.assertEquals("000:000xx", scoreKeeper.getScore());
     } 
-*/
+    
 }
