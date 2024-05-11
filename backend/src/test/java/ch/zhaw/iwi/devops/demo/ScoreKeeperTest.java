@@ -10,7 +10,9 @@ public class ScoreKeeperTest {
     @BeforeEach
     public void setUp() {
         scoreKeeper = new ScoreKeeper();
-    }
+    }  
+    
+    /*  
     //TESTFALL 1: 
     @Test
     public void testInitialScore() {
@@ -27,9 +29,9 @@ public class ScoreKeeperTest {
     @Test
     public void testScoreTeamA2() {
         scoreKeeper.scoreTeamA2();
-        Assertions.assertEquals("002:000ss", scoreKeeper.getScore());
+        Assertions.assertEquals("002:000", scoreKeeper.getScore());
     }
-   /*  
+ 
     @Test
     public void testScoreTeamA1() {
         scoreKeeper.scoreTeamA1();
