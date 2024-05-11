@@ -4,7 +4,7 @@ public class ScoreKeeper {
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
 
-* 
+/* 
     
     //TESTFALL 1: 
     public String getScore() {
