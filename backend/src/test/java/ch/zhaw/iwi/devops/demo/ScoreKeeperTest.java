@@ -47,12 +47,12 @@ public void testScoreTeamB1() {
     scoreKeeper.scoreTeamB1();
     Assertions.assertEquals("000:001", scoreKeeper.getScore());
 }
-/* 
+
    @Test
     public void testInitialScore() {
-        Assertions.assertEquals("000:000", scoreKeeper.getScore());
+        Assertions.assertEquals("000:000xx", scoreKeeper.getScore());
     }
-
+/* 
     @Test
     public void testMultipleScores() {
         scoreKeeper.scoreTeamA3();
