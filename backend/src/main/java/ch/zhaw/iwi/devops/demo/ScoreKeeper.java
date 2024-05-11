@@ -3,7 +3,7 @@ package ch.zhaw.iwi.devops.demo;
 public class ScoreKeeper {
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
- 
+  
     public void scoreTeamA3() {
         scoreTeamA += 3;
     }

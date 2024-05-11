@@ -31,7 +31,7 @@ public class HelpdeskController {
         System.out.println("Init Data");
     }
 
-    @GetMapping("/test")
+    @GetMapping("/helpdesktest") //geändert weil Springboot Error
     public String test() {
         return "Helpdesk app is up and running!";
     }
