@@ -18,14 +18,15 @@ public class ScoreKeeper {
        public void scoreTeamA2() {
         scoreTeamA += 2;
     }
+    
 /* 
     
    
 
  
 
-    /
-
+    
+    //TESTFALL 4: 
     public void scoreTeamA1() {
         scoreTeamA += 1;
     }
