@@ -11,13 +11,13 @@ public class ScoreKeeperTest {
     public void setUp() {
         scoreKeeper = new ScoreKeeper();
     }  
-    
+     //TESTFALL 1: 
+     @Test
+     public void testInitialScore() {
+         Assertions.assertEquals("000:000XX", scoreKeeper.getScore());
+     }
     /*  
-    //TESTFALL 1: 
-    @Test
-    public void testInitialScore() {
-        Assertions.assertEquals("000:000", scoreKeeper.getScore());
-    }
+   
     //TESTFALL 2: 
         
     @Test
