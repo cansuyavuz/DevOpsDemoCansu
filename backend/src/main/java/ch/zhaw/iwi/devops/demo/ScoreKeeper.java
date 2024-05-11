@@ -27,7 +27,10 @@ public class ScoreKeeper {
     public void scoreTeamB3() {
         scoreTeamB += 3;
     }
-
+    //TESTFALL 6:    
+    public void scoreTeamB2() {
+        scoreTeamB += 2;
+    }
 /* 
     
    
@@ -39,9 +42,7 @@ public class ScoreKeeper {
 
 
 
-    public void scoreTeamB2() {
-        scoreTeamB += 2;
-    }
+
     public void scoreTeamB1() {
         scoreTeamB += 1;
     }
